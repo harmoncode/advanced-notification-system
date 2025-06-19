@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notification System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Notification System</h1>
+            <p>Interactive demo with various notification types</p>
+        </header>
+
+        <div class="notification-controls">
+            <div class="control-group">
+                <h3>Notification Types</h3>
+                <div class="button-group">
+                    <button class="btn success" data-type="success">
+                        <i class="fas fa-check-circle"></i> Success
+                    </button>
+                    <button class="btn error" data-type="error">
+                        <i class="fas fa-times-circle"></i> Error
+                    </button>
+                    <button class="btn warning" data-type="warning">
+                        <i class="fas fa-exclamation-triangle"></i> Warning
+                    </button>
+                    <button class="btn info" data-type="info">
+                        <i class="fas fa-info-circle"></i> Info
+                    </button>
+                    <button class="btn custom" data-type="custom">
+                        <i class="fas fa-star"></i> Custom
+                    </button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Animation Styles</h3>
+                <div class="button-group">
+                    <button class="btn" data-animation="slide">Slide</button>
+                    <button class="btn" data-animation="fade">Fade</button>
+                    <button class="btn" data-animation="bounce">Bounce</button>
+                    <button class="btn" data-animation="flip">Flip</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Position</h3>
+                <div class="button-group">
+                    <button class="btn" data-position="top-right">Top Right</button>
+                    <button class="btn" data-position="top-left">Top Left</button>
+                    <button class="btn" data-position="bottom-right">Bottom Right</button>
+                    <button class="btn" data-position="bottom-left">Bottom Left</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Settings</h3>
+                <div class="settings">
+                    <label>
+                        <input type="checkbox" id="soundEnabled" checked>
+                        Enable Sound
+                    </label>
+                    <label>
+                        <input type="checkbox" id="autoClose" checked>
+                        Auto Close
+                    </label>
+                    <label>
+                        <input type="number" id="duration" value="3000" min="1000" max="10000" step="1000">
+                        Duration (ms)
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification-container" id="notificationContainer"></div>
+
+        <footer>
+            <div class="footer-content">
+                Created by <a href="https://harmoncode.com" target="_blank">HarmonCode</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
